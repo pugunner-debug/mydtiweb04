@@ -2,10 +2,11 @@
 <html lang="en">
 
 <!-- ตรงนี้คือสมองของเว็บ ขาดไม่ได้เลยนะ! -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pugun Portfolio 2026 ✨</title>
+    <title>Pugunner Portfolio 2026 ✨</title>
 
     <!-- เอาไว้ดึงพวกไอคอนมาใช้ (Bootstrap Icons) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -13,15 +14,20 @@
     <!-- ฟอนต์เว็บเรา หัวข้อใช้ Bebas เนื้อหาใช้ Prompt -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap"
+        rel="stylesheet">
 
     <!-- พื้นที่แต่งสวยให้เว็บ ลุย! -->
     <style>
         /* เคลียร์ค่าเริ่มต้นของเบราว์เซอร์ก่อน จะได้ไม่เพี้ยน */
-        * { box-sizing: border-box; }
+        * {
+            box-sizing: border-box;
+        }
 
         body {
-            background-color: #010427; /* สีพื้นหลังเอาแบบกรมท่าเข้มๆ ลึกลับนิดนึง */
+            background-color: #010427;
+            /* สีพื้นหลังเอาแบบกรมท่าเข้มๆ ลึกลับนิดนึง */
             color: #ffffff;
             margin: 0;
             padding: 0;
@@ -72,7 +78,8 @@
             font-weight: 600;
             font-size: 1rem;
             padding: 12px 28px;
-            border-radius: 50px; /* ปรับปุ่มให้โค้งๆ มนๆ ดูซอฟต์ลง */
+            border-radius: 50px;
+            /* ปรับปุ่มให้โค้งๆ มนๆ ดูซอฟต์ลง */
             text-decoration: none;
             display: inline-flex;
             align-items: center;
@@ -225,13 +232,16 @@
         /* จัดการรูป About Me ให้ขยายเต็มๆ ไม่โดนบีบความสูง! */
         .about-image img {
             width: 100%;
-            height: auto; /* ตรงนี้แหละที่แก้ให้รูปขยายเต็มสัดส่วนจริง */
-            max-height: 800px; /* กันรูปยาวทะลุจอ ถ้าอยากให้ยาวกว่านี้ปรับเลขขึ้นได้ */
+            height: auto;
+            /* ตรงนี้แหละที่แก้ให้รูปขยายเต็มสัดส่วนจริง */
+            max-height: 800px;
+            /* กันรูปยาวทะลุจอ ถ้าอยากให้ยาวกว่านี้ปรับเลขขึ้นได้ */
             object-fit: cover;
             border-radius: 30px;
             background-color: #070d38;
             display: block;
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4); /* เพิ่มเงาให้รูปดูมีมิติ ลอยเด่นขึ้นมานิดนึง */
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+            /* เพิ่มเงาให้รูปดูมีมิติ ลอยเด่นขึ้นมานิดนึง */
         }
 
         /* ---------------------------------------------------- */
@@ -437,6 +447,137 @@
             color: #7b84ab;
             font-size: 0.9rem;
         }
+
+        /* ==================================================== */
+        /* โค้ดส่วนที่เพิ่มให้พู่กัน: ทำให้รองรับจอมือถือ (Responsive 100%) */
+        /* โดยไม่มีการแตะต้องโค้ดเดิมที่เขียนไว้เลย! */
+        /* ==================================================== */
+        @media (max-width: 768px) {
+
+            /* ปรับแถบเมนูด้านบน */
+            .nav-bar {
+                padding: 25px 20px;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .menu {
+                gap: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            /* ลดระยะขอบมหาศาลจาก 180px ให้เหลือ 20px และเรียงจากบนลงล่าง */
+            .hero-profile,
+            .about-me,
+            .capabilities,
+            .experience,
+            .lets-connect {
+                margin: 50px 25px;
+                flex-direction: column;
+                gap: 40px;
+                text-align: center;
+            }
+
+            /* แก้ไขให้พื้นที่คอนเทนต์ใช้ความกว้างเต็ม 100% */
+            .hero-info,
+            .hero-image,
+            .about-title-col,
+            .about-content-col,
+            .capabilities-title-col,
+            .capabilities-content-col,
+            .experience-title-col,
+            .experience-content-col,
+            .connect-left,
+            .connect-right {
+                width: 100%;
+                flex: none;
+            }
+
+            /* ปรับขนาดฟอนต์หัวข้อและเนื้อหา */
+            .hero-info h1 {
+                font-size: 3.5rem;
+            }
+
+            .section-title {
+                font-size: 3rem;
+                text-align: center;
+            }
+
+            /* ปรับรูปโปรไฟล์ไม่ให้ล้นจอ */
+            .hero-image {
+                justify-content: center;
+            }
+
+            .hero-image img {
+                width: 100%;
+                height: auto;
+                max-width: 380px;
+            }
+
+            .about-image img {
+                max-height: 450px;
+            }
+
+            /* จัดปุ่มต่างๆ ให้อยู่ตรงกลางเวลาดูบนมือถือ */
+            .hero-actions,
+            .about-actions {
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-top: 10px;
+            }
+
+            /* จัดสกิลแคปซูลให้อยู่ตรงกลาง */
+            .skills-list {
+                justify-content: center;
+            }
+
+            /* Experience section จัดการวันที่ให้ลงมาอยู่บรรทัดล่าง */
+            .exp-header {
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+                margin-bottom: 10px;
+            }
+
+            /* ปุ่มโซเชียลตรง Contact ให้อยู่ตรงกลาง */
+            .connect-socials {
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+
+            /* ปรับแบบฟอร์ม */
+            .form-group label {
+                text-align: left;
+            }
+
+            /* ปุ่ม Submit กางให้เต็มจอไปเลย */
+            .contact-form .btn-primary {
+                align-self: stretch;
+                justify-content: center;
+            }
+        }
+
+        /* เผื่อสำหรับจอเล็กมากๆ (เช่นมือถือรุ่นหน้าจอแคบ) */
+        @media (max-width: 480px) {
+            .hero-info h1 {
+                font-size: 2.8rem;
+            }
+
+            .section-title {
+                font-size: 2.4rem;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .hero-actions .btn-primary {
+                width: 100%;
+                justify-content: center;
+            }
+        }
     </style>
 </head>
 
@@ -460,7 +601,8 @@
         <div class="hero-info">
             <!-- แนะนำตัวแบบตะโกน HI, I AM PUGUN! -->
             <h1>HI, I AM<br>Rachaporn C.🖌️</h1>
-            <p>นักศึกษาปีที่ 2 สาขาเทคโนโลยีดิจิทัลและนวัตกรรม<br>คณะศิลปศาสตร์และวิทยาศาสตร์ มหาวิทยาลัยเอเชียอาคเนย์ (SAU)</p>
+            <p>นักศึกษาปีที่ 2 สาขาเทคโนโลยีดิจิทัลและนวัตกรรม<br>คณะศิลปศาสตร์และวิทยาศาสตร์ มหาวิทยาลัยเอเชียอาคเนย์
+                (SAU)</p>
             <div class="hero-actions">
                 <a href="#contact" class="btn-primary">CONTACT ME <span class="dot">●</span></a>
                 <a href="#" class="icon-circle"><i class="bi bi-linkedin"></i></a>
@@ -482,7 +624,10 @@
             <div class="about-content-col">
                 <!-- เขียนเป้าหมายกับสิ่งที่ชอบลงไป -->
                 <h3 class="about-lead">เด็กน้อยเริ่มต้นจาก 0 ที่กำลังเดินทางตามฝันสู่นักสร้างสรรค์โลกไอที ✨</h3>
-                <p class="about-desc">กำลังศึกษาอยู่ชั้นปีที่ 2 หลงรักการออกแบบ UX/UI และงานดีไซน์มากๆ มีความฝันอยากทำหลายๆ อย่างในสายงานไอที พร้อมเปิดรับความรู้ใหม่ๆ เสมอ เป้าหมายสูงสุดคือการผสานความงดงามของ "ศิลปะ" และตรรกะของ "วิทยาศาสตร์" เข้าด้วยกันอย่างมีชั้นเชิง เพื่อสร้างสรรค์ผลงานที่ใช้งานได้ดีและมีความหมาย 🎨💻</p>
+                <p class="about-desc">กำลังศึกษาอยู่ชั้นปีที่ 2 หลงรักการออกแบบ UX/UI และงานดีไซน์มากๆ
+                    มีความฝันอยากทำหลายๆ อย่างในสายงานไอที พร้อมเปิดรับความรู้ใหม่ๆ เสมอ
+                    เป้าหมายสูงสุดคือการผสานความงดงามของ "ศิลปะ" และตรรกะของ "วิทยาศาสตร์" เข้าด้วยกันอย่างมีชั้นเชิง
+                    เพื่อสร้างสรรค์ผลงานที่ใช้งานได้ดีและมีความหมาย 🎨💻</p>
                 <div class="about-actions">
                     <a href="#" class="btn-primary">DOWNLOAD RESUME <span class="dot">●</span></a>
                     <a href="#" class="icon-circle"><i class="bi bi-linkedin"></i></a>
@@ -502,7 +647,8 @@
             <h2 class="section-title">MY SKILLS</h2>
         </div>
         <div class="capabilities-content-col">
-            <p>กำลังสนุกกับการเรียนรู้และฝึกฝนเครื่องมือใหม่ๆ ทั้งสายออกแบบ (Design) และสายเขียนโค้ด (Coding) เพื่อเตรียมพร้อมลุยทุกโปรเจกต์ที่ท้าทาย ✌️✨</p>
+            <p>กำลังสนุกกับการเรียนรู้และฝึกฝนเครื่องมือใหม่ๆ ทั้งสายออกแบบ (Design) และสายเขียนโค้ด (Coding)
+                เพื่อเตรียมพร้อมลุยทุกโปรเจกต์ที่ท้าทาย ✌️✨</p>
             <!-- ทักษะที่เรามีตอนนี้ (ต้องพัฒนาเพิ่มอีกแน่!) -->
             <div class="skills-list">
                 <span class="skill-pill">FIGMA & FIGJAM</span>
@@ -528,7 +674,9 @@
                     <span class="exp-title">UI/UX & Mobile App Student Projects</span>
                     <span class="exp-date">May 2026</span>
                 </div>
-                <p class="exp-desc">ออกแบบ Information Architecture, User Flows และ UI Wireframe สำหรับโปรเจกต์แอปสุขภาพ "Healthy Balance" ด้วย Figma และได้ลงมือเขียนโค้ดพัฒนาหน้าแอปพลิเคชัน "Thailand Hotline" ด้วย Flutter และ Dart สนุกกับการปั้นไอเดียให้เป็นรูปเป็นร่างมากๆ 📱💡</p>
+                <p class="exp-desc">ออกแบบ Information Architecture, User Flows และ UI Wireframe สำหรับโปรเจกต์แอปสุขภาพ
+                    "Healthy Balance" ด้วย Figma และได้ลงมือเขียนโค้ดพัฒนาหน้าแอปพลิเคชัน "Thailand Hotline" ด้วย
+                    Flutter และ Dart สนุกกับการปั้นไอเดียให้เป็นรูปเป็นร่างมากๆ 📱💡</p>
             </div>
             <!-- งานเอกสารและ QC ที่ช่วยฝึกความรอบคอบ -->
             <div class="exp-item">
@@ -536,7 +684,9 @@
                     <span class="exp-title">Admin & QC Experience</span>
                     <span class="exp-date">Jul 2026 — Aug 2026</span>
                 </div>
-                <p class="exp-desc">เคยเก็บเกี่ยวประสบการณ์การทำงานด้านเอกสารและ Quality Control  ได้ฝึกฝนความรอบคอบ การจัดทำรายงานประจำวัน และการจัดการระบบ 5S ซึ่งช่วยฝึกระเบียบวิธีคิดแบบวิทยาศาสตร์มาปรับใช้กับสายงานพี่ๆไอทีได้ดีมากๆ 📋🔍</p>
+                <p class="exp-desc">เคยเก็บเกี่ยวประสบการณ์การทำงานด้านเอกสารและ Quality Control ได้ฝึกฝนความรอบคอบ
+                    การจัดทำรายงานประจำวัน และการจัดการระบบ 5S
+                    ซึ่งช่วยฝึกระเบียบวิธีคิดแบบวิทยาศาสตร์มาปรับใช้กับสายงานพี่ๆไอทีได้ดีมากๆ 📋🔍</p>
             </div>
         </div>
     </div>
@@ -583,8 +733,9 @@
 
     <!-- ปิดท้ายเว็บด้วยเครดิตสวยๆ ของเราเอง -->
     <div class="footer">
-        <p>© 2026 Crafted with 💖 by Pugunner (Rachapohn Chanyapat)</p>
+        <p>© 2026 Crafted with 🖌️ by Pugunner (Rachapohn Chanyapat)</p>
     </div>
 
 </body>
+
 </html>
