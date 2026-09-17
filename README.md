@@ -3,7 +3,7 @@
 # 🐣 My Web Design Project (HTML & CSS)
 **บันทึกการเรียนรู้เว็บ มือใหม่หัดขับสุดๆ! 💻✨**
 
-[![Live Demo](https://img.shields.io/badge/ลองกดดูเว็บจริง-คลิกเลย!-2ea44f?style=for-the-badge&logo=github)](https://pugunner-debug.github.io/mydtiweb04/)
+[![Live Demo](https://img.shields.io/badge/View Live Site-2ea44f?style=for-the-badge&logo=github)](https://pugunner-debug.github.io/mydtiweb04/)
 
 *โปรเจกต์นี้ทำส่งอาจารย์ และตั้งใจเก็บไว้เปิดดูทบทวนเวลางงโค้ดในอนาคตค่ะ 😅*
 
