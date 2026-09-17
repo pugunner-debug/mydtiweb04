@@ -3,7 +3,7 @@
 # 🐣 My Web Design Project (HTML & CSS)
 **บันทึกการเรียนรู้เว็บ มือใหม่หัดขับสุดๆ! 💻✨**
 
-[![Live Demo](https://img.shields.io/badge/View Live Site-2ea44f?style=for-the-badge&logo=github)](https://pugunner-debug.github.io/mydtiweb04/)
+[![Live Demo](https://img.shields.io/badge/View_Live_Demo-Click_Here-2ea44f?style=for-the-badge&logo=github)](https://pugunner-debug.github.io/mydtiweb04/)
 
 *โปรเจกต์นี้ทำส่งอาจารย์ และตั้งใจเก็บไว้เปิดดูทบทวนเวลางงโค้ดในอนาคตค่ะ 😅*
 
@@ -18,39 +18,39 @@
 
 ---
 
-## 📸 หน้าตาผลงานทั้ง 5 แบบ (ที่พยายามปั้นสุดฝีมือ!)
+## 📸 หน้าตาผลงานทั้ง 5 แบบ (ที่พยายามไม่เมาโค้ด!)
 รวมภาพหน้าเว็บที่ลองฝึกทำตามอาจารย์ค่ะ:
 
 <div align="center">
 
-<p><b>1. หน้าแรกสุดปัง (Main Portfolio Overview)</b></p>
+<p><b>1. หน้าแรกที่แก้บ่อยที่สุด (Main Portfolio Overview)</b></p>
 <kbd>
   <img width="1915" height="871" alt="Screenshot 2026-09-17 184743" src="https://github.com/user-attachments/assets/a31e96c6-7589-41d3-a3da-bf9c04f9037c" />
 </kbd>
 <br><br>
 
-<p><b>2. ธีมดาร์กมืดๆ คลีนๆ (Dark Theme Profile)</b></p>
+<p><b>2. ธีมดาร์กมืดๆ เหมือนอนาคตเลย555+ (Dark Theme Profile)</b></p>
 <kbd>
   <img width="1917" height="868" alt="Screenshot 2026-09-17 184815" src="https://github.com/user-attachments/assets/631a671c-339f-48fc-821d-befc337d69cc" />
 
 </kbd>
 <br><br>
 
-<p><b>3. ธีมสดใส (Nature Vibe Profile)</b></p>
+<p><b>3. ธีมสดใส แหละมั้ง (Nature Vibe Profile)</b></p>
 <kbd>
   <img width="1917" height="867" alt="Screenshot 2026-09-17 184835" src="https://github.com/user-attachments/assets/c3f64a38-7df9-4400-a2e5-bdb4f3497bba" />
 
 </kbd>
 <br><br>
 
-<p><b>4. ตัวการ์ตูนสุดคิ้วท์ (Character Portfolio Concept)</b></p>
+<p><b>4. ตัวการ์ตูนสุดคิ้วท์ ต้นแบบมาจากตัวเอง (Character Portfolio Concept)</b></p>
 <kbd>
   <img width="1896" height="870" alt="Screenshot 2026-09-17 184851" src="https://github.com/user-attachments/assets/865467fb-2372-4712-b86e-c185b542bec3" />
 
 </kbd>
 <br><br>
 
-<p><b>5. เว็บร้านเบเกอรี Bake House (Commercial Theme)</b></p>
+<p><b>5. เว็บร้านเบเกอรี Bake House ที่ก็อปอาจารย์มา (Commercial Theme)</b></p>
 <kbd>
   <img width="1891" height="868" alt="Screenshot 2026-09-17 184914" src="https://github.com/user-attachments/assets/64db9fc8-ad61-4c57-892a-cae1f1657137" />
 
